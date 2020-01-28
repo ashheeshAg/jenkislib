@@ -1,7 +1,5 @@
 #!/usr/bin/env groovy
 @Library('jenkislib@master')
-pipeline {
-  agent any
   terraform (
         gitCredentialsId: 'master'
         gitRepo: 'ssh://git@myScmServer.com/repos/myRepo.git'
@@ -12,4 +10,4 @@ pipeline {
         storageCredentialId:'skdl'
   )
   
-}
+
