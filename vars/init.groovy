@@ -1,5 +1,5 @@
-def call(Map stageParams) {
+def init() {
     sh  """
                   terraform init -input=false
-                  """
+  """
   }
